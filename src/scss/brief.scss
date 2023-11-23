@@ -1,0 +1,133 @@
+// brief
+.brief {
+	padding: 140px 0 100px;
+      
+   @media (max-width: $tablet) {
+      padding: 110px 0 80px;
+   }
+
+   @media (max-width: $mobileSmall) {
+      padding: 90px 0 50px;
+   }
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+   &__title {
+		text-align: center;
+
+		&::after {
+			left: 31%;
+      }
+	}
+
+	&__text {
+		text-align: center;
+	}
+
+	&__inner {
+		padding: 1em 1em 1.25em;	
+		border: 2px solid #FFCC0D;
+		border-radius: 5px;
+	}
+}
+
+.form-brief {
+	max-width: 550px;
+	
+	&__contact-block  {
+		margin-bottom: 15px;
+		position: relative;
+	}
+
+	&__item {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	&__input {
+		background-color: transparent;
+		border-radius: 3px;
+		border: 1.5px solid $linkOtherColor;
+		height: 45px;
+		outline: 0;
+		padding: 0 20px;
+		width: 100%;
+		transition: all 0.3s ease;
+
+		@media (max-width: $pc) {
+			height: calc(35px + 10 * (100vw - 320px) / 940);
+		 }
+  }
+
+  &__input._form-error {
+	  border: 1.5px solid $errorColor;
+  }
+
+  &__error {
+	  margin-top: 3px;
+	  font-size: 16px;
+	  color: $errorColor;
+
+	  @media (max-width: $pc) {
+		font-size: calc(12px + 4*((100vw - 320px) / (1260 - 320)));
+		}
+	} 
+  
+ 	textarea.form-brief__input {
+	  min-height: 100px;
+	  resize: vertical;
+	  padding: 10px 20px;	  
+  }
+
+  	&__input:focus {
+		border-color: $accentColor;
+	}
+
+	&__checkbox {
+		margin-bottom: 15px;
+	}
+
+	&__button {
+		width: 100%;
+	}
+
+	&__video-box {
+		position: absolute;
+		top: 87%;
+		left: 50%;
+		transform: translateX(-50%);
+		opacity: 0;
+		transition: opacity 0.3s ease;
+		
+		video {
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	&__body._sending .form-brief__video-box {
+		opacity: 1
+	}
+}
+
+.radio__title {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.options-brief {
+	display: block;	
+}
+
+.options-brief .options__item {
+	margin-bottom: 5px;
+}
+
+.checkbox__link {
+	display: inline-block;
+}
+

@@ -1,0 +1,47 @@
+// policy
+.plan {
+	padding: 140px 0 100px;
+      
+   @media (max-width: $tablet) {
+      padding: 110px 0 80px;
+   }
+
+   @media (max-width: $mobileSmall) {
+      padding: 90px 0 50px;
+   }
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+   &__title {
+		align-self: center;
+
+		&::after {
+			left: 24%;
+      }
+	}
+
+	&__title.landing {
+		
+		&::after {
+			left: 17%;
+      }
+	}
+
+	&__title.card-website {
+		
+		&::after {
+			left: 30%;
+      }
+	}
+
+	&__title.multi-page {
+		text-align: center;
+
+		&::after {
+			left: 25%;
+      }
+	}
+}
