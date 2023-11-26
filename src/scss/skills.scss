@@ -2,7 +2,7 @@
 .skills {
    padding: 120px 0 20px;
    margin-bottom: 20px;
-   
+
    @media (max-width: $tablet) {
       padding: 100px 0 20px;
    }
@@ -12,15 +12,15 @@
    }
 
    ul li {
-      list-style:square;
+      list-style: square;
    }
 
    &__wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-bottom: 4px solid $mainColor; 
-      
+      border-bottom: 4px solid $mainColor;
+
       @media (max-width: $tablet) {
          border-width: 3px;
       }
@@ -40,14 +40,14 @@
       }
 
       &::after {
-         left: 17%;         
+         left: 17%;
       }
    }
 
    &__content {
       max-width: 800px;
       margin-bottom: 90px;
-      
+
       @media (max-width: $mobileSmall) {
          margin-bottom: 50px;
       }
@@ -58,11 +58,11 @@
 
       @media (max-width: $mobile) {
          width: 100%;
-      } 
+      }
    }
 
    &__progress-bar {
-      margin-bottom: 20px;      
+      margin-bottom: 20px;
 
       .progress {
          &__item {
@@ -71,20 +71,21 @@
             border: 3px solid $mainColor;
             padding: 7px;
             @include font(20px, 500, 170%);
+
             @media (max-width: $pc) {
-               font-size: calc(14px + 6*((100vw - 320px) / (1260 - 320)));
+               font-size: calc(13px + 7*((100vw - 320px) / (1260 - 320)));
             }
 
             @media (max-width: $mobile) {
                border: 2px solid $mainColor;
                margin-bottom: 12px;
                padding: 5px;
-            }            
+            }
          }
 
          &__item-inner {
             width: 100%;
-            position: relative;          
+            position: relative;
          }
 
          &__subtitle {
@@ -94,15 +95,15 @@
             padding-left: 15px;
 
             @media (max-width: $pc) {
-               padding-left: calc(12px + 3*((100vw - 320px) / (1260 - 320)));
+               padding-left: calc(5px + 10*((100vw - 320px) / (1260 - 320)));
             }
          }
 
          &__bg {
-            position: absolute;  
+            position: absolute;
             top: 0;
             bottom: 0;
-            left: 0;                      
+            left: 0;
          }
 
          &__bg._watcher-view {
@@ -114,9 +115,9 @@
                left: 0;
                background-color: $accentColor;
                z-index: 1;
-               animation: progressLine 3s cubic-bezier(.165,.84,.44,1) forwards;
+               animation: progressLine 3s cubic-bezier(.165, .84, .44, 1) forwards;
                animation-delay: 0.8s;
-            }    
+            }
          }
 
          &__bg-1 {
@@ -148,7 +149,7 @@
          }
 
          &__bg-8 {
-            width: 40%;
+            width: 70%;
          }
 
          &__bg-9 {
@@ -159,17 +160,17 @@
             position: absolute;
             top: 0;
             right: -50px;
-            z-index: 2; 
-            transform: scale(0); 
-                        
+            z-index: 2;
+            transform: scale(0);
+
             @media (max-width: $pc) {
-               right: calc(-35px - 15*((100vw - 320px) / (1260 - 320)));
+               right: calc(-30px - 20*((100vw - 320px) / (1260 - 320)));
             }
          }
-         
+
          &__percent._watcher-view {
-            animation: percent 1.5s cubic-bezier(.165,.84,.44,1) forwards;
-            animation-delay: 2.6s;  
+            animation: percent 1.5s cubic-bezier(.165, .84, .44, 1) forwards;
+            animation-delay: 2.5s;
          }
       }
    }
@@ -178,7 +179,7 @@
       max-width: 790px;
       width: 100%;
       padding: 0 25px;
-      
+
       @media (max-width: $pc) {
          padding-left: calc(17px + 8*((100vw - 320px) / (1260 - 320)));
          padding-right: calc(17px + 8*((100vw - 320px) / (1260 - 320)));
