@@ -1,14 +1,13 @@
 //skills
 .skills {
-   padding: 120px 0 20px;
-   margin-bottom: 20px;
-
-   @media (max-width: $tablet) {
-      padding: 100px 0 20px;
+   padding: 160px 0 40px;
+ 
+	@media (max-width: $tablet) {
+      padding: 140px 0 40px;
    }
 
    @media (max-width: $mobileSmall) {
-      padding: 75px 0 0;
+      padding: 100px 0 20px;
    }
 
    ul li {
@@ -27,18 +26,7 @@
    }
 
    &__title {
-      margin-bottom: 90px;
-      position: relative;
-      align-self: center;
-
-      @media (max-width: $tablet) {
-         margin-bottom: 70px;
-      }
-
-      @media (max-width: $mobileSmall) {
-         margin-bottom: 35px;
-      }
-
+     
       &::after {
          left: 17%;
       }
@@ -46,12 +34,7 @@
 
    &__content {
       max-width: 800px;
-      margin-bottom: 90px;
-
-      @media (max-width: $mobileSmall) {
-         margin-bottom: 50px;
-      }
-
+      
       @media (max-width: $pc) {
          max-width: calc(290px + 510*((100vw - 320px) / (1260 - 320)));
       }
