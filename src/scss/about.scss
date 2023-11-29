@@ -8,7 +8,6 @@
       flex-direction: column;
       align-items: center;
       border-bottom: 4px solid $mainLightColor;
-
       padding: 55px 0 0;
 
       @media (max-width: $tablet) {
@@ -22,19 +21,18 @@
    }
 
    &__title {
-      position: relative;   
+      position: relative;
+      margin-top: -15px;
 
       @media (max-width: $tablet) {
-         margin-top: -50px;         
+         margin-top: -70px;
       }
 
       @media (max-width: $mobile) {
-         margin-top: -80px;         
+         margin-top: -80px;
       }
 
-      @media (max-width: $mobileSmall) {
-         margin-top: -70px;
-      }
+    
 
       &::after {
          left: 4%;
