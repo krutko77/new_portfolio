@@ -29,7 +29,7 @@
       }
 
       @media (max-width: $mobile) {
-         margin-top: -80px;
+         margin-top: -65px;
       }
 
     
@@ -71,7 +71,7 @@
 
    &__img {
       width: 100%;
-      aspect-ratio: 600/429;
+		height: auto;
    }
 
    &__img-1 {
