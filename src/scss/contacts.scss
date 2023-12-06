@@ -1,15 +1,19 @@
-//contact
-.contact {
-   padding: 160px 0 40px;
+//contacts
+.contacts {
 
-	@media (max-width: $tablet) {
-      padding: 140px 0 40px;
-   }
+	padding: 160px 0 40px;
 
-   @media (max-width: $mobileSmall) {
-      padding: 100px 0 20px;
-   }
+		@media (max-width: $tablet) {
+			padding: 140px 0 40px;
+		}
 
+		@media (max-width: $mobileSmall) {
+			padding: 100px 0 20px;
+		}
+		
+	&__inner {
+		
+	}
 
    &__wrapper {
       display: flex;
@@ -87,7 +91,7 @@
    }
 }
 
-.social-contact {
+.social-contacts {
    display: flex;
 
    &__icon {
@@ -109,7 +113,7 @@
    }
 }
 
-.contact__form .form__button {
+.contacts__form .form__button {
    transition: color 0.3s ease,
       background-color 0.3s ease,
       border-color 0.3s ease,

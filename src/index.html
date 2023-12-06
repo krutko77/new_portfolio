@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="ru">
-@@include('html/_head.htm',{
+<html lang="ru">@@include('html/_head.htm', {
 "title":"Веб-разработчик | Павел Крутько",
 "description": "Кроссбраузерная, семантическая, валидная вёрстка и чистый код."
 })
 
 <body>
-	<div class="wrapper">
-		@@include('html/_header.htm',{})
+	<div class="wrapper">@@include('html/_header.htm', {})
 		<main class="page">
-			<section class="home" data-watch="navigator" data-watch-threshold="0.5">
+			<section class="home" data-watch="navigator" data-watch-threshold="0.4">
 				<div class="home__container">
 					<div class="home__wrapper">
 						<div class="home__content">
@@ -17,9 +15,8 @@
 								<div class="home__img-inner">
 									<div class="home__border-block" data-prlx-mouse data-prlx-cx=400 data-prlx-cy=400
 										data-prlx-dxr data-prlx-dyr>
-										<div class="home__img-wrapper">
-											<img class="home__img" data-prlx-mouse data-prlx-cx=400 data-prlx-cy=400 data-prlx-dxr
-												data-prlx-dyr src="@img/photo.jpg" alt="photo">
+										<div class="home__img-wrapper"><img class="home__img" data-prlx-mouse data-prlx-cx=400
+												data-prlx-cy=400 data-prlx-dxr data-prlx-dyr src="@img/photo.jpg" alt="photo">
 										</div>
 									</div>
 									<div class="home__color-block" data-prlx-mouse data-prlx-cx=400 data-prlx-cy=400
@@ -29,11 +26,14 @@
 							<div class="home__text-box">
 								<div class="home__text-wrapper">
 									<h1 class="home__title title" data-watch data-watch-once>Веб<br>разработчик</h1>
-									<p class="home__text-description text" data-watch data-watch-once>Создаю быстрые адаптивные
-										сайты с использованием технологий HTML,
-										CSS/SCSS, JavaScript, WordPress, Tilda.</p>
-									<p class="home__text-name text" data-watch data-watch-once>Павел Крутько | Минск, Беларусь.
-									</p>
+									<p class="home__text-description text" data-watch data-watch-once>Создаю быстрые
+										адаптивные сайты с использованием технологий HTML,
+										CSS/SCSS,
+										JavaScript,
+										WordPress,
+										Tilda.</p>
+									<p class="home__text-name text" data-watch data-watch-once>Павел Крутько | Минск,
+										Беларусь. </p>
 								</div>
 							</div>
 						</div>
@@ -43,124 +43,119 @@
 			<section class="projects" data-watch="navigator" data-watch-threshold="0.22">
 				<div class="projects__container">
 					<div class="projects__wrapper">
-						<h2 class="projects__title title">
-							Примеры<br>работ
-						</h2>
-						<p class="projects__text text">Ниже расположены примеры разных типов сайтов, которые я разрабатывал.
-							Для каждого примера приведено краткое описание используемых технологий и реализованных
-							возможностей. При клике по карточке с проектом, можно открыть сайт в браузере и посмотреть как он
-							выглядит в полном размере.</p>
+						<h2 class="projects__title title">Примеры<br>работ </h2>
+						<p class="projects__text text">Ниже расположены примеры разных типов сайтов,
+							которые я разрабатывал. Для каждого примера приведено краткое описание используемых технологий и
+							реализованных возможностей. При клике по карточке с проектом,
+							можно открыть сайт в браузере и посмотреть как он выглядит в полном размере.</p>
 						<div class="projects__portfolio portfolio margin-bottom-50">
 
-							<div class="portfolio__item">
-								<a class="portfolio__link" target="_blank" href="https://ludmila-valentinova.ru/"></a>
+							<div class="portfolio__item"><a class="portfolio__link" target="_blank"
+									href="https://ludmila-valentinova.ru/"></a>
 								<div class="portfolio__inner">
-									<h3 class="portfolio__subtitle subtitle">Тематический
-										сайт <br>с блогом </h3>
-									<div class="portfolio__img-wrapper portfolio__img-wrapper--left" data-watch data-watch-once
-										data-watch-threshold="0.5">
+									<h3 class="portfolio__subtitle subtitle">Тематический сайт <br>с блогом </h3>
+									<div class="portfolio__img-wrapper portfolio__img-wrapper--left" data-watch data-watch-once>
 										<img class="portfolio__img" width="540" height="270"
-											data-src="@img/projects/ludmila-valentinova.jpg" alt="фото проекта">
+											src="@img/projects/ludmila-valentinova.jpg" alt="фото проекта">
 									</div>
-									<p class="portfolio__description">Многостраничный адаптивный
-										сайт, разработан на CMS WordPress. Есть возможность управления контентом сайта
-										через админ-панель.</p>
-									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong>
-									</p>
+									<p class="portfolio__description">Многостраничный адаптивный сайт,
+										разработан на CMS WordPress. Есть возможность управления контентом сайта через
+										админ-панель.</p>
+									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong></p>
 									<div class="portfolio__list-wrapper left-text">
 										<ul class="portfolio__list list ul-style text">
-											<li class="list__item">анимация элементов;</li>
+											<li class="list__item">анимация элементов;
+											</li>
 											<li class="list__item">возможность вести блог с подпиской и комментариями;
 											</li>
-											<li class="list__item">квиз (анкета) на главной странице;</li>
-											<li class="list__item">автопостинг записей в ВК и Телеграм;</li>
+											<li class="list__item">квиз (анкета) на главной странице;
+											</li>
+											<li class="list__item">автопостинг записей в ВК и Телеграм;
+											</li>
 											<li class="list__item">лидмагниты в виде книг для сбора адресов эл. почты;
 											</li>
-											<li class="list__item">почтовый сервис MailPoet для рассылки писем;</li>
-											<li class="list__item">базовая SEO оптимизация;</li>
+											<li class="list__item">почтовый сервис MailPoet для рассылки писем;
+											</li>
+											<li class="list__item">базовая SEO оптимизация;
+											</li>
 											<li class="list__item">защита от спама и взлома пароля.</li>
 										</ul>
 									</div>
-								</div>
-								<span class="portfolio__label">Посмотреть проект</span>
+								</div><span class="portfolio__label">Посмотреть проект</span>
 							</div>
 
-							<div class="portfolio__item">
-								<a class="portfolio__link" target="_blank" href="https://gusarovshcina.by/"></a>
+							<div class="portfolio__item"><a class="portfolio__link" target="_blank"
+									href="https://gusarovshcina.by/"></a>
 								<div class="portfolio__inner">
-									<h3 class="portfolio__subtitle subtitle">Сайт по
-										услугам<br>аренды усадьбы</h3>
-									<div class="portfolio__img-wrapper portfolio__img-wrapper--right" data-watch data-watch-once
-										data-watch-threshold="0.5">
-										<img class="portfolio__img" width="540" height="270"
-											data-src="@img/projects/gusarovshcina.jpg" alt="фото проекта">
-									</div>
-									<p class="portfolio__description">Многостраничный адаптивный
-										сайт, разработан на CMS WordPress. Есть возможность управления контентом сайта
-										через админ-панель.</p>
-									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong>
-									</p>
+									<h3 class="portfolio__subtitle subtitle">Сайт по услугам<br>аренды усадьбы</h3>
+									<div class="portfolio__img-wrapper portfolio__img-wrapper--right" data-watch-once data-watch>
+										<img class="portfolio__img" width="540" height="270" src="@img/projects/gusarovshcina.jpg"
+											alt="фото проекта"></div>
+									<p class="portfolio__description">Многостраничный адаптивный сайт,
+										разработан на CMS WordPress. Есть возможность управления контентом сайта через
+										админ-панель.</p>
+									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong></p>
 									<div class="portfolio__list-wrapper left-text">
 										<ul class="portfolio__list list ul-style text">
-											<li class="list__item">анимация элементов;</li>
+											<li class="list__item">анимация элементов;
+											</li>
 											<li class="list__item">разработка сайта велась через написание чистого кода
-												HTML/SCSS/JavaScript с последующим созданием собственной темы и установкой
-												на CMS WordPress;</li>
-											<li class="list__item">регистрация проживания через всплывающие формы;</li>
-											<li class="list__item">сервис для сбора эл. адресов заказчиков;</li>
-											<li class="list__item">базовая SEO оптимизация;</li>
+												HTML/SCSS/JavaScript с последующим созданием собственной темы и установкой на CMS
+												WordPress;
+											</li>
+											<li class="list__item">регистрация проживания через всплывающие формы;
+											</li>
+											<li class="list__item">сервис для сбора эл. адресов заказчиков;
+											</li>
+											<li class="list__item">базовая SEO оптимизация;
+											</li>
 											<li class="list__item">защита от спама и взлома пароля.</li>
 										</ul>
 									</div>
-								</div>
-								<span class="portfolio__label">Посмотреть проект</span>
+								</div><span class="portfolio__label">Посмотреть проект</span>
 							</div>
 
-							<div class="portfolio__item">
-								<a class="portfolio__link" target="_blank" href="https://kolodishchi.izumifitness.by/"></a>
+							<div class="portfolio__item"><a class="portfolio__link" target="_blank"
+									href="https://kolodishchi.izumifitness.by/"></a>
 								<div class="portfolio__inner">
-									<h3 class="portfolio__subtitle subtitle">Лендинг
-										<br>ФК "Изуми"
+									<h3 class="portfolio__subtitle subtitle">Лендинг <br>ФК "Изуми"
 									</h3>
-									<div class="portfolio__img-wrapper portfolio__img-wrapper--left" data-watch data-watch-once
-										data-watch-threshold="0.5">
-										<img class="portfolio__img" width="540" height="270" data-src="@img/projects/izumi.jpg"
-											alt="фото проекта">
-									</div>
-									<p class="portfolio__description">Одностраничный адаптивный
-										сайт, разработан в Tilda с использованием zero блока.</p>
-									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong>
-									</p>
+									<div class="portfolio__img-wrapper portfolio__img-wrapper--left" data-watch-once data-watch>
+										<img class="portfolio__img" width="540" height="270" src="@img/projects/izumi.jpg"
+											alt="фото проекта"></div>
+									<p class="portfolio__description">Одностраничный адаптивный сайт,
+										разработан в Tilda с использованием zero блока.</p>
+									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong></p>
 									<div class="portfolio__list-wrapper left-text">
 										<ul class="portfolio__list list ul-style text">
-											<li class="list__item">анимация элементов сайта;</li>
-											<li class="list__item">авторские дизайн и структура лендинга;</li>
+											<li class="list__item">анимация элементов сайта;
+											</li>
+											<li class="list__item">авторские дизайн и структура лендинга;
+											</li>
 											<li class="list__item">pазрабатывались вёрстка и функционал;
 											</li>
 											<li>Open Graph разметка.</li>
 										</ul>
 									</div>
-								</div>
-								<span class="portfolio__label">Посмотреть проект</span>
+								</div><span class="portfolio__label">Посмотреть проект</span>
 							</div>
 
-							<div class="portfolio__item">
-								<a class="portfolio__link" target="_blank" href="https://yurist.ludmila-valentinova.ru/"></a>
+							<div class="portfolio__item"><a class="portfolio__link" target="_blank"
+									href="https://yurist.ludmila-valentinova.ru/"></a>
 								<div class="portfolio__inner">
 									<h3 class="portfolio__subtitle subtitle">Лендинг<br>"Услуги юриста"</h3>
-									<div class="portfolio__img-wrapper portfolio__img-wrapper--right" data-watch data-watch-once
-										data-watch-threshold="0.5">
+									<div class="portfolio__img-wrapper portfolio__img-wrapper--right" data-watch data-watch-once>
 										<img class="portfolio__img" width="540" height="270"
-											data-src="@img/projects/yurist.ludmila-valentinova.jpg" alt="фото проекта">
-									</div>
-									<p class="portfolio__description">Одностраничный адаптивный сайт, разработан на чистом коде
-										(HTML/SCSS/JavaScript).</p>
-									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong>
-									</p>
+											src="@img/projects/yurist.ludmila-valentinova.jpg" alt="фото проекта"></div>
+									<p class="portfolio__description">Одностраничный адаптивный сайт,
+										разработан на чистом коде (HTML/SCSS/JavaScript).</p>
+									<p class="portfolio__title-small left-text"><strong>Особенности проекта:</strong></p>
 									<div class="portfolio__list-wrapper left-text">
 										<ul class="portfolio__list list ul-style text">
-											<li class="list__item">анимация элементов сайта;</li>
-											<li class="list__item">авторские дизайн и структура лендинга;</li>
+											<li class="list__item">анимация элементов сайта;
+											</li>
+											<li class="list__item">авторские дизайн и структура лендинга;
+											</li>
 											<li class="list__item">pазрабатывались вёрстка и функционал;
 											</li>
 											<li class="list__item">parallax эффект фона секции и спойлеры на чистом JS;
@@ -168,8 +163,7 @@
 											<li>Open Graph разметка.</li>
 										</ul>
 									</div>
-								</div>
-								<span class="portfolio__label">Посмотреть проект</span>
+								</div><span class="portfolio__label">Посмотреть проект</span>
 							</div>
 
 						</div>
@@ -183,129 +177,142 @@
 					<div class="skills__wrapper">
 						<h2 class="skills__title title">Навыки</h2>
 						<div class="skills__content-top">
-							<p class="skills__text text margin-bottom-20">
-								В своей работе я стремлюсь не только решить поставленную задачу, но и найти
-								оптимальный путь к её решению.</p>
+							<p class="skills__text text margin-bottom-20">В своей работе я стремлюсь не только решить
+								поставленную задачу,
+								но и найти оптимальный путь к её решению.</p>
 							<p class="skills__text text margin-bottom-20">Эффективность принятых решений в разработке
-								значительно влияет на скорость работы сайта, его уникальность и функциональность. А это
-								позволяет алгоритмам поисковых систем продвигать сайт в верхние позиции при выдачи по
-								поисковым запросам.</p>
-							<p class="skills__text text margin-bottom-30">
-								Мне нравится создавать сайты с уникальным дизайном, но при этом несложные и понятные для
-								пользователя. Надёжность, скорость загрузки и работы, удобство в использовании – вот основные
-								критерии в моей разработке сайтов.
-							</p>
-							<p class="skills__sub-subtitle sub-subtitle margin-bottom-10">Основные технологии, которые я
-								использую при
-								создании сайтов:</p>
+								значительно влияет на скорость работы сайта,
+								его уникальность и функциональность. А это позволяет алгоритмам поисковых систем продвигать
+								сайт в верхние позиции при выдачи по поисковым запросам.</p>
+							<p class="skills__text text margin-bottom-30">Мне нравится создавать сайты с уникальным
+								дизайном,
+								но при этом несложные и понятные для пользователя. Надёжность,
+								скорость загрузки и работы,
+								удобство в использовании – вот основные критерии в моей разработке сайтов. </p>
+							<p class="skills__sub-subtitle sub-subtitle margin-bottom-10">Основные технологии,
+								которые я использую при создании сайтов:</p>
 							<ul class="skills__list list ul-style text margin-bottom-30">
-								<li class="list__item">вёрстка статичного сайта путем написания чистого кода HTML5/CSS3/SCSS c
-									использованием JavaScript;
+								<li class="list__item">вёрстка статичного сайта путем написания чистого кода HTML5/CSS3/SCSS
+									c использованием JavaScript;
 								</li>
 								<li class="list__item">разработка и установка чистого кода на WordPress через создание
-									собственной темы;</li>
-								<li class="list__item">разработка сайта на готовой теме WordPress
-									путем её настройки и программной доработки;</li>
+									собственной темы;
+								</li>
+								<li class="list__item">разработка сайта на готовой теме WordPress путем её настройки и
+									программной доработки;
+								</li>
 								<li class="list__item">разработка сайта в Tilda.</li>
 							</ul>
-							<p class="skills__text text margin-bottom-20">Все сайты, которые я разрабатываю, имеют базовую
-								SEO
-								подготовку, оптимизированы под быструю загрузку и работу, адаптированы под мобильные
-								устройства и одинаково хорошо отображаются в разных браузерах. Базовая SEO подготовка служит
-								прочным фундаментом для дальнейших работ по продвижению сайта.</p>
-							<p class="skills__text text margin-bottom-40">По моему субъективному мнению, навыки, используемые
-								мной в проектах, имеют следующую оценку:</p>
+							<p class="skills__text text margin-bottom-20">Все сайты,
+								которые я разрабатываю,
+								имеют базовую SEO подготовку,
+								оптимизированы под быструю загрузку и работу,
+								адаптированы под мобильные устройства и одинаково хорошо отображаются в разных браузерах.
+								Базовая SEO подготовка служит прочным фундаментом для дальнейших работ по продвижению сайта.
+							</p>
+							<p class="skills__text text margin-bottom-40">По моему субъективному мнению,
+								навыки,
+								используемые мной в проектах,
+								имеют следующую оценку:</p>
 						</div>
 						<div class="skills__content margin-bottom-80">
 							<div class="skills__progress-bar progress">
 								<div class="progress__item">
 									<div class="progress__item-inner">
 										<h3 class="progress__subtitle">HTML5/BEM/CSS3/SCSS</h3>
-										<div class="progress__bg progress__bg-1" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>90%</span>
-										</div>
+										<div class="progress__bg progress__bg-1" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>90%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
-										<h3 class="progress__subtitle">FLEX, GRID, BOOTSTRAP</h3>
-										<div class="progress__bg progress__bg-2" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>80%</span>
-										</div>
+										<h3 class="progress__subtitle">FLEX,
+											GRID,
+											BOOTSTRAP</h3>
+										<div class="progress__bg progress__bg-2" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>80%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
 										<h3 class="progress__subtitle">JavaScript</h3>
-										<div class="progress__bg progress__bg-3" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>40%</span>
-										</div>
+										<div class="progress__bg progress__bg-3" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>40%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
-										<h3 class="progress__subtitle">GULP, Webpack</h3>
-										<div class="progress__bg progress__bg-4" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>50%</span>
-										</div>
+										<h3 class="progress__subtitle">GULP,
+											Webpack</h3>
+										<div class="progress__bg progress__bg-4" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>50%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
-										<h3 class="progress__subtitle">Figma, Photoshop</h3>
-										<div class="progress__bg progress__bg-5" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>40%</span>
-										</div>
+										<h3 class="progress__subtitle">Figma,
+											Photoshop</h3>
+										<div class="progress__bg progress__bg-5" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>40%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
 										<h3 class="progress__subtitle">Git</h3>
-										<div class="progress__bg progress__bg-6" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>20%</span>
-										</div>
+										<div class="progress__bg progress__bg-6" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>20%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
 										<h3 class="progress__subtitle">WordPress</h3>
-										<div class="progress__bg progress__bg-7" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>30%</span>
-										</div>
+										<div class="progress__bg progress__bg-7" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>30%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
 										<h3 class="progress__subtitle">Tilda</h3>
-										<div class="progress__bg progress__bg-8" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>70%</span>
-										</div>
+										<div class="progress__bg progress__bg-8" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>70%</span></div>
 									</div>
 								</div>
 								<div class="progress__item">
 									<div class="progress__item-inner">
 										<h3 class="progress__subtitle">REACT</h3>
-										<div class="progress__bg progress__bg-9" data-watch data-watch-once>
-											<span class="progress__percent" data-watch data-watch-once>20%</span>
-										</div>
+										<div class="progress__bg progress__bg-9" data-watch data-watch-once><span
+												class="progress__percent" data-watch data-watch-once>20%</span></div>
 									</div>
 								</div>
 							</div>
 							<ul class="skills__list text">
-								<li class="skills__item">опытный веб-разработчик с применением технологий HTML5, BEM, CSS3/SCSS,
-									JavaScript, WordPress и Tilda;</li>
-								<li class="skills__item">делаю кроссбраузерную, адаптивную, семантическую и валидную (W3C)
-									вёрстку;</li>
-								<li class="skills__item">верстаю сайты по методике Desktop First и Mobile First;</li>
-								<li class="skills__item">использую сборщики GULP и Webpack;</li>
-								<li class="skills__item">технологии Flex и Grid позволяют мне использовать меньше
-									кода для позиционирования элементов и вёрстки адаптивно-отзывчивого макета;</li>
-								<li class="skills__item">работаю с макетом сайта в редакторах Figma и Photoshop;</li>
-								<li class="skills__item">с помощью Pixel Perfect я точно следую макету;</li>
-								<li class="skills__item">анимация и переходы делают мои сайты нескучными;</li>
+								<li class="skills__item">опытный веб-разработчик с применением технологий HTML5,
+									BEM,
+									CSS3/SCSS,
+									JavaScript,
+									WordPress и Tilda;
+								</li>
+								<li class="skills__item">делаю кроссбраузерную,
+									адаптивную,
+									семантическую и валидную (W3C) вёрстку;
+								</li>
+								<li class="skills__item">верстаю сайты по методике Desktop First и Mobile First;
+								</li>
+								<li class="skills__item">использую сборщики GULP и Webpack;
+								</li>
+								<li class="skills__item">технологии Flex и Grid позволяют мне использовать меньше кода для
+									позиционирования элементов и вёрстки адаптивно-отзывчивого макета;
+								</li>
+								<li class="skills__item">работаю с макетом сайта в редакторах Figma и Photoshop;
+								</li>
+								<li class="skills__item">с помощью Pixel Perfect я точно следую макету;
+								</li>
+								<li class="skills__item">анимация и переходы делают мои сайты нескучными;
+								</li>
 								<li class="skills__item">по желанию заказчика пренесу свёрстанный макет сайта на WordPress;
 								</li>
-								<li class="skills__item">верстаю компоненты под REACT с использованием MUI;</li>
+								<li class="skills__item">верстаю компоненты под REACT с использованием MUI;
+								</li>
 								<li class="skills__item">пользуюсь GIT и GitHub для самостоятельной работы и при работе в
 									команде.</li>
 							</ul>
@@ -313,214 +320,206 @@
 					</div>
 				</div>
 			</section>
-			<section class="about">
-				<div class="about__inner" data-prlx-parent data-watch="navigator" data-watch-threshold="0.27">
-					<div class="about__container" data-prlx>
-						<div class="about__wrapper text">
-							<h2 class="about__title title">О себе</h2>
-							<div class="clearfix">
-								<div class="about__img-box-1 float-left float-left-about">
-									<img class="about__img-1" width="300" height="300" src="@img/about-photo.jpg"
-										alt="фото автора">
-								</div>
-								<p class="about__text margin-bottom-30">Привет!<br>
-									Меня зовут Павел. Я специализируюсь на вёрстке сайтов. Я пишу как чистый код сайта, так и код с
-									последующей установкой на платформу WordPress, создавая собственную тему. Так же я разрабатываю сайты, перенастраивая
-									готовые темы WordPress или блоки в Tilda под дизайн заказчика.</p>
-								<p class="about__text margin-bottom-30">Имею высшее техническое образование и практический опыт
-									работы в
-									отрасли веб-разработки около трех лет. Мой путь в разработку начинался с HTML-вёрстки
-									cовместно с использованием JavaScript, и этот скилл у меня прокачан
-									максимально. Вместе с тем, я хорошо знаком с архитектурой WordPress, Tilda, веб-дизайном и
-									продвижением сайтов в поисковых системах и контекстной рекламе.</p>
+			<section class="about" data-watch="navigator" data-watch-threshold="0.27">
+				<div class="about__container" data-prlx-parent>
+					<div class="about__wrapper text" data-prlx>
+						<h2 class="about__title title">О себе</h2>
+						<div class="clearfix">
+							<div class="about__img-box-1 float-left float-left-about"><img class="about__img-1" width="300"
+									height="300" src="@img/about-photo.jpg" alt="фото автора"></div>
+							<p class="about__text margin-bottom-30">Привет !<br>Меня зовут Павел. Я специализируюсь на
+								вёрстке сайтов. Я пишу как чистый код сайта,
+								так и код с последующей установкой на платформу WordPress,
+								создавая собственную тему. Так же я разрабатываю сайты,
+								перенастраивая готовые темы WordPress или блоки в Tilda под дизайн заказчика.</p>
+							<p class="about__text margin-bottom-30">Имею высшее техническое образование и практический
+								опыт работы в отрасли веб-разработки около трех лет. Мой путь в разработку начинался с
+								HTML-вёрстки cовместно с использованием JavaScript,
+								и этот скилл у меня прокачан максимально. Вместе с тем,
+								я хорошо знаком с архитектурой WordPress,
+								Tilda,
+								веб-дизайном и продвижением сайтов в поисковых системах и контекстной рекламе.</p>
+						</div>
+						<p class="about__text margin-bottom-30">Мне нравится делать сайты и я с удовольствием приступаю
+							к каждому новому проекту. Пишу семантический,
+							валидный и чистый код. Меня привлекают нестандартные,
+							интересные задачи и поиск эффективных решений. В моей работе для мена главными являются
+							основные критерии качественной вёрстки: надёжность,
+							удобство,
+							скорость,
+							семантика,
+							доступность.</p>
+						<p class="about__text margin-bottom-50">Для этого я использую все передовые веб-технологии
+							разработки. Особое внимание я уделяю кроссбраузерности и адаптивности сайта – в разных
+							браузерах и на различных устройствах он должен отображаться одинаково хорошо.</p>
+						<h3 class="about__subtitle subtitle">Стек технологий<br>с которыми я работаю</h3>
+						<div class="about__grid grid">
+							<div class="grid__item item-grid">
+								<h4 class="item-grid__subtitle sub-subtitle">Языки прог.<br>и разметки</h4>
+								<ul class="item-grid__list list">
+									<li class="list__item"><span>HTML 5</span></li>
+									<li class="list__item"><span>CSS 3/SCSS</span></li>
+									<li class="list__item"><span>JavaScript</span></li>
+									<li class="list__item"><span>PHP</span></li>
+								</ul>
 							</div>
-							<p class="about__text margin-bottom-30">Мне нравится делать сайты и я с удовольствием приступаю к
-								каждому новому проекту. Пишу семантический, валидный и чистый код. Меня привлекают
-								нестандартные, интересные задачи и поиск эффективных решений.
-								В моей работе для мена главными являются основные критерии качественной вёрстки: надёжность, удобство,
-								скорость, семантика, доступность.</p>
-								<p class="about__text margin-bottom-50">Для этого я использую
-								все передовые веб-технологии разработки. Особое внимание я уделяю кроссбраузерности и
-								адаптивности сайта – в разных браузерах и на различных устройствах он должен отображаться
-								одинаково хорошо.</p>
-							<h3 class="about__subtitle subtitle">Стек технологий<br>с которыми я работаю</h3>
-							<div class="about__grid grid">
-								<div class="grid__item item-grid">
-									<h4 class="item-grid__subtitle sub-subtitle">Языки прог.<br>и разметки</h4>
-									<ul class="item-grid__list list">
-										<li class="list__item"><span>HTML 5</span></li>
-										<li class="list__item"><span>CSS 3/SCSS</span></li>
-										<li class="list__item"><span>JavaScript</span></li>
-										<li class="list__item"><span>PHP</span></li>
+							<div class="grid__item item-grid">
+								<h4 class="item-grid__subtitle sub-subtitle">Инструменты <br>разработки</h4>
+								<ul class="item-grid__list list">
+									<li class="list__item"><span>BEM</span></li>
+									<li class="list__item"><span>SASS</span></li>
+									<li class="list__item"><span>Gulp,
+											Webpack</span></li>
+									<li class="list__item"><span>Git,
+											GitHub</span></li>
+								</ul>
+							</div>
+							<div class="grid__item item-grid">
+								<h4 class="item-grid__subtitle sub-subtitle">Разработка <br>под WordPress</h4>
+								<ul class="item-grid__list list">
+									<li class="list__item"><span>посадка чистого <br>кода на WP</span></li>
+									<li class="list__item"><span>кастомизация <br>и настройка <br>темы WP</span></li>
+								</ul>
+							</div>
+							<div class="grid__item item-grid">
+								<h4 class="item-grid__subtitle sub-subtitle">Графические <br>редакторы</h4>
+								<ul class="item-grid__list list">
+									<li class="list__item"><span>Figma</span></li>
+									<li class="list__item"><span>Photoshop</span></li>
+									<li class="list__item"><span>Zeplin</span></li>
+								</ul>
+							</div>
+						</div>
+						<div class="about__img-box margin-bottom-50"><img class="about__img" width="600" height="430"
+								src="@img/certificate-600.jpg" alt="сертификат"></div>
+						<p class="about__text margin-bottom-30">Я живу в Минске. Однако при этом успешно выполняю заказы
+							из других городов и стран,
+							так как у меня отлажена работа удаленно. Общение в процессе разработки сайта и решение
+							различных возникающих вопросов происходит в Zoom или других мессенджерах.</p>
+						<p class="about__text margin-bottom-30">Имею опыт командной работы. Я умею находить выход в
+							спорных ситуациях,
+							предлагая компромиссное решение,
+							так как не всегда ожидания заказчика совпадают с возможностями веб-разработки или
+							требованиями веб-дизайна. Обязательность и честность для меня на первом месте во
+							взаимоотношениях с коллегами и заказчиками.</p>
+						<p class="about__text margin-bottom-120">Открыт для предложений и сотрудничества !</p>
+					</div>
+				</div>
+			</section>
+			<section class="contacts" data-watch="navigator" data-watch-threshold="0.35">
+				<div class="contacts__inner">
+					<div class="contacts__container">
+						<div class="contacts__wrapper">
+							<h2 class="contacts__title title">Контакты</h2>
+							<div class="contacts__content text">
+								<div class="contacts__left-block">
+									<p class="contacts__text margin-bottom-20">Крутько Павел Вячеславович</p>
+									<p class="contacts__text margin-bottom-20">Самозанятый,
+										зарегистрирован в ИМНС 107 Инспекции МНС по Первомайскому району г. Минска (на учете с
+										11.08.2023),
+										УНП AB7319068.</p>
+									<p class="contacts__text margin-bottom-20">Открыт для предложений и сотрудничества. Быстро
+										отвечу на все ваши вопросы в мессенджерах или по телефону (с 11:00 до 23:00 по МСК):
+									</p>
+									<ul class="contacts__social social-contacts margin-bottom-20">
+										<li class="social-contacts__item "><a class="social-contacts__link" target="_blank"
+												href="https://t.me/webkrutko"><svg class="social-contacts__icon">
+													<use xlink:href="@img/icons/icons.svg#telegram"></use>
+												</svg></a></li>
+										<li class="social-contacts__item"><a class="social-contacts__link" target="_blank"
+												href="viber://chat?number=375299580130"><svg class="social-contacts__icon">
+													<use xlink:href="@img/icons/icons.svg#viber"></use>
+												</svg></a></li>
+										<li class="social-contacts__item"><a class="social-contacts__link" target="_blank"
+												href="whatsapp://send?phone=79935644581"><svg class="social-contacts__icon">
+													<use xlink:href="@img/icons/icons.svg#whatsapp"></use>
+												</svg></a></li>
 									</ul>
-								</div>
-								<div class="grid__item item-grid">
-									<h4 class="item-grid__subtitle sub-subtitle">Инструменты <br>разработки</h4>
-									<ul class="item-grid__list list">
-										<li class="list__item"><span>BEM</span></li>
-										<li class="list__item"><span>SASS</span></li>
-										<li class="list__item"><span>Gulp, Webpack</span></li>
-										<li class="list__item"><span>Git, GitHub</span></li>
-									</ul>
-								</div>
-								<div class="grid__item item-grid">
-									<h4 class="item-grid__subtitle sub-subtitle">Разработка <br>под WordPress</h4>
-									<ul class="item-grid__list list">
-										<li class="list__item"><span>посадка чистого <br>кода на WP</span></li>
-										<li class="list__item"><span>кастомизация <br>и настройка <br>темы WP</span>
+									<ul class="contacts__list list margin-bottom-20">
+										<li class="list__item margin-bottom-20">
+											<div class="list__item-box">
+												<div class="list__item-wrapper list__item--top"><span
+														class="list__item-icon _icon-phone-flip"></span><a href="tel:+375299580130"
+														class="list__item-link link">+375 29 958-01-30</a>,
+													&nbsp;
+													&nbsp;
+												</div>
+												<div class="list__item-wrapper"><span
+														class="list__item-icon _icon-phone-flip"></span><a href="tel:+79935644581"
+														class="list__item-link link">+7 993 564-45-81</a></div>
+											</div>
+										</li>
+										<li class="list__item margin-bottom-20">
+											<div class="list__item-wrapper"><span class="list__item-icon _icon-email"></span><a
+													href="mailto:webkrutko@mail.ru"
+													class="list__item-link link">webkrutko@mail.ru</a></div>
+										</li>
+										<li class="list__item">
+											<div class="list__item-wrapper location"><span
+													class="list__item-icon _icon-location-dot"></span>
+												<p class="list__item-link">Беларусь,
+													220056,
+													Минск,
+													ул. Стариновская 3-17</p>
+											</div>
 										</li>
 									</ul>
+									<p class="contacts__text margin-bottom-30" tabindex="">Или вы можете отправить мне сообщение,
+										заполнив форму "Обсудить проект".</p>
 								</div>
-								<div class="grid__item item-grid">
-									<h4 class="item-grid__subtitle sub-subtitle">Графические <br>редакторы</h4>
-									<ul class="item-grid__list list">
-										<li class="list__item"><span>Figma</span></li>
-										<li class="list__item"><span>Photoshop</span></li>
-										<li class="list__item"><span>Zeplin</span></li>
-									</ul>
+								<div class="contacts__right-block">
+									<div class="contacts__form form margin-bottom-80">
+										<h3 class="contacts__subtitle subtitle">Обсудить проект</h3>
+										<form class="form__body" id="form" name="myForm" action="files/sendmail/sendmail.php"
+											method="POST" data-ajax>
+											<div class="form__contacts-block">
+												<div class="form__placeholder-container"><input
+														class="form__input text-form for-clear" id="name" type="text" name="name"
+														data-validate data-error="Напишите имя" data-required placeholder=" "><label
+														class="form__label text-form" for="name">Имя *</label></div>
+												<div class="form__placeholder-container"><input
+														class="form__input text-form for-clear" id="tel" type="text" name="tel"
+														placeholder=" "><label class="form__label text-form" for="tel">Телефон или
+														мессенджер</label></div>
+												<div class="form__placeholder-container"><input
+														class="form__input text-form for-clear" id="email" type="email" name="email"
+														placeholder=" " data-validate data-error="Напишите правильный E-mail"
+														data-required="email"><label class="form__label text-form" for="email">E-mail
+														*</label></div>
+												<div class="form__placeholder-container form__placeholder-container--last">
+													<textarea class="form__input text-form for-clear" name="message" id="message"
+														data-validate data-error="Опишите вашу задачи для сайта" data-required
+														placeholder=" "></textarea><label class="form__label text-form"
+														for="message">Текст сообщения*</label>
+												</div>
+												<div class="form__checkbox checkbox"><input id="formAgreement-2" type="checkbox"
+														name="agreement" class="checkbox__input" data-required data-validate
+														data-error="Отметьте чекбокс"><label for="formAgreement-2"
+														class="checkbox__label"><span class="text-form">Заполняя форму,
+															я соглашаюсь на <a class="checkbox__link link"
+																href="http://webkrutko.by/politika-obrabotki.html#anchor52">обработку</a>персональных
+															данных</span></label></div><input type="hidden" name="code" value=""
+													id="code">
+												<div class="form__video-box"><video autoplay loop muted playsinline>
+														<source src="@img/loading/loading-96.webm" type="video/webm">
+														<source src="@img/loading/loading-96.mp4" type="video/mp4">
+													</video></div>
+											</div><button class="form__button btn button button-accent clear-button" type="submit"
+												aria-label="Отправить" data-watch data-watch-once>Отправить</button>
+										</form>
+									</div>
 								</div>
 							</div>
-							<div class="about__img-box margin-bottom-50">
-								<img class="about__img" width="600" height="430" src="@img/certificate-600.jpg"
-									alt="сертификат">
-							</div>
-							<p class="about__text margin-bottom-30">Я живу в Минске. Однако при этом успешно выполняю
-								заказы из других городов и стран, так как у меня отлажена работа удаленно. Общение в процессе
-								разработки сайта и решение различных возникающих вопросов происходит в
-								Zoom или других мессенджерах.</p>
-							<p class="about__text margin-bottom-30">Имею опыт командной работы. Я умею находить выход в спорных
-								ситуациях, предлагая
-								компромиссное
-								решение, так как не всегда ожидания заказчика совпадают с возможностями веб-разработки или
-								требованиями веб-дизайна. Обязательность и честность для меня на первом месте во
-								взаимоотношениях с коллегами и заказчиками.</p>
-							<p class="about__text margin-bottom-120">Открыт для предложений и сотрудничества!</p>
 						</div>
 					</div>
 				</div>
 			</section>
+		</main>@@include('html/_footer.htm', {}
 
-			<section class="contact" data-watch="navigator" data-watch-threshold="0.35">
-				<div class="contact__container">
-					<div class="contact__wrapper">
-						<h2 class="contact__title title">Контакты</h2>
-						<div class="contact__content text">
-							<div class="contact__left-block">
-								<p class="contact__text margin-bottom-20">Крутько Павел Вячеславович</p>
-								<p class="contact__text margin-bottom-20">Самозанятый, зарегистрирован в ИМНС 107 Инспекции МНС
-									по Первомайскому району г. Минска (на учете с 11.08.2023), УНП AB7319068.</p>
-								<p class="contact__text margin-bottom-20">Открыт для предложений и сотрудничества. Быстро отвечу
-									на все ваши вопросы в мессенджерах или по телефону (с 11:00 до 23:00 по МСК):</p>
-								<ul class="contact__social social-contact margin-bottom-20">
-									<li class="social-contact__item ">
-										<a class="social-contact__link" target="_blank" href="https://t.me/webkrutko">
-											<svg class="social-contact__icon">
-												<use xlink:href="@img/icons/icons.svg#telegram"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social-contact__item">
-										<a class="social-contact__link" target="_blank" href="viber://chat?number=375299580130">
-											<svg class="social-contact__icon">
-												<use xlink:href="@img/icons/icons.svg#viber"></use>
-											</svg>
-										</a>
-									</li>
-									<li class="social-contact__item">
-										<a class="social-contact__link" target="_blank" href="whatsapp://send?phone=79935644581">
-											<svg class="social-contact__icon">
-												<use xlink:href="@img/icons/icons.svg#whatsapp"></use>
-											</svg>
-										</a>
-									</li>
-								</ul>
-								<ul class="contact__list list margin-bottom-20">
-									<li class="list__item margin-bottom-20">
-										<div class="list__item-box">
-											<div class="list__item-wrapper list__item--top">
-												<span class="list__item-icon _icon-phone-flip"></span><a href="tel:+375299580130"
-													class="list__item-link link">+375 29 958-01-30</a>, &nbsp;&nbsp;
-											</div>
-											<div class="list__item-wrapper">
-												<span class="list__item-icon _icon-phone-flip"></span><a href="tel:+79935644581"
-													class="list__item-link link">+7 993 564-45-81</a>
-											</div>
-										</div>
-									</li>
-									<li class="list__item margin-bottom-20">
-										<div class="list__item-wrapper">
-											<span class="list__item-icon _icon-email"></span><a href="mailto:webkrutko@mail.ru"
-												class="list__item-link link">webkrutko@mail.ru</a>
-										</div>
-									</li>
-									<li class="list__item">
-										<div class="list__item-wrapper location">
-											<span class="list__item-icon _icon-location-dot"></span>
-											<p class="list__item-link">Беларусь, 220056, Минск, ул. Стариновская 3-17</p>
-										</div>
-									</li>
-								</ul>
-								<p class="contact__text margin-bottom-30">Или вы можете отправить мне сообщение, заполнив форму
-									"Обсудить проект".</p>
-							</div>
-							<div class="contact__right-block">
-								<div class="contact__form form margin-bottom-80">
-									<h3 class="contact__subtitle subtitle">Обсудить проект</h3>
-									<form class="form__body" id="form" name="myForm" action="files/sendmail/sendmail.php"
-										method="POST" data-ajax>
-										<div class="form__contact-block">
-											<div class="form__placeholder-container">
-												<input class="form__input text-form for-clear" id="name" type="text" name="name"
-													data-validate data-error="Напишите имя" data-required placeholder=" ">
-												<label class="form__label text-form" for="name">Имя *</label>
-											</div>
-											<div class="form__placeholder-container">
-												<input class="form__input text-form for-clear" id="tel" type="text" name="tel"
-													placeholder=" ">
-												<label class="form__label text-form" for="tel">Телефон или мессенджер</label>
-											</div>
-											<div class="form__placeholder-container">
-												<input class="form__input text-form for-clear" id="email" type="email" name="email"
-													placeholder=" " data-validate data-error="Напишите правильный E-mail"
-													data-required="email">
-												<label class="form__label text-form" for="email">E-mail *</label>
-											</div>
-											<div class="form__placeholder-container form__placeholder-container--last">
-												<textarea class="form__input text-form for-clear" name="message" id="message"
-													data-validate data-error="Опишите вашу задачи для сайта" data-required
-													placeholder=" "></textarea>
-												<label class="form__label text-form" for="message">Текст сообщения*</label>
-											</div>
-											<div class="form__checkbox checkbox">
-												<input id="formAgreement-2" type="checkbox" name="agreement" class="checkbox__input"
-													data-required data-validate data-error="Отметьте чекбокс">
-												<label for="formAgreement-2" class="checkbox__label"><span
-														class="text-form">Заполняя
-														форму, я соглашаюсь на <a class="checkbox__link link"
-															href="http://webkrutko.by/politika-obrabotki.html#anchor52">обработку</a>
-														персональных данных</span></label>
-											</div>
-											<input type="hidden" name="code" value="" id="code">
-											<div class="form__video-box">
-												<video autoplay loop muted playsinline>
-													<source src="@img/loading/loading-96.webm" type="video/webm">
-													<source src="@img/loading/loading-96.mp4" type="video/mp4">
-												</video>
-											</div>
-										</div>
-										<button class="form__button btn button button-accent clear-button" type="submit"
-											aria-label="Отправить" data-watch data-watch-once>Отправить</button>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
-		@@include('html/_footer.htm',{})
-	</div>
-	@@include('html/_js.htm',{})
+		)
+	</div>@@include('html/_js.htm', {}
+
+	)
 </body>
 
 </html>

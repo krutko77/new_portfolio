@@ -3,7 +3,7 @@
    position: relative;
    padding: 160px 0 40px;
 
-	@media (max-width: $tablet) {
+   @media (max-width: $tablet) {
       padding: 140px 0 40px;
    }
 
@@ -90,6 +90,15 @@
       margin-bottom: 15px;
    }
 
+   &__img-wrapper {
+      overflow: hidden;
+      margin-bottom: 20px;
+
+      @media (max-width: $pc) {
+         margin-bottom: calc(10px + 10*((100vw - 320px) / (1260 - 320)));
+      }
+   }
+
    &__img-wrapper--left {
       transform: rotate3d(0, 1, 0, 90deg);
    }
@@ -98,26 +107,26 @@
       transform: rotate3d(0, 1, 0, -90deg);
    }
 
+   &__img {
+      width: 100%;
+      height: auto;
+      position: relative;
+      z-index: 2;
+      visibility: 0;
+      transition:  transform 0.8s ease;
+   }
+
    &__img-wrapper {
-      overflow: hidden;
-      margin-bottom: 20px;
-      transition: transform 2.3s ease;
+      will-change: transform;
+      transition: transform 2.3s ease 0.3s;
 
       &._watcher-view {
          transform: rotate3d(0, 1, 0, 0deg);
       }
 
-      @media (max-width: $pc) {
-         margin-bottom: calc(10px + 10*((100vw - 320px) / (1260 - 320)));
+      &._watcher-view .portfolio__img {
+         visibility: 1;
       }
-   }
-
-   &__img {
-      width: 100%;
-		height: auto;
-      position: relative;
-      z-index: 2;
-      transition: all 0.8s ease;
    }
 
    &__description {
