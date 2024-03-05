@@ -4,10 +4,6 @@
    display: flex;
    padding: 85px 0 40px;
 
-   @media (max-width: $tablet) {
-      margin-bottom: 0;
-   }
-
    @media (max-width: $mobileSmall) {
       min-height: 93vh;
       padding: 75px 0 20px;

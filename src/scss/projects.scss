@@ -1,6 +1,5 @@
 //projects
 .projects {
-   position: relative;
    padding: 160px 0 40px;
 
    @media (max-width: $tablet) {
@@ -93,6 +92,7 @@
    &__img-wrapper {
       overflow: hidden;
       margin-bottom: 20px;
+		aspect-ratio: 540/270;      
 
       @media (max-width: $pc) {
          margin-bottom: calc(10px + 10*((100vw - 320px) / (1260 - 320)));
@@ -113,7 +113,7 @@
       position: relative;
       z-index: 2;
       visibility: 0;
-      transition:  transform 0.8s ease;
+      transition: transform 0.8s ease;
    }
 
    &__img-wrapper {
