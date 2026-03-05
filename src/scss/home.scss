@@ -2,11 +2,10 @@
 .home {
    min-height: 100vh;
    display: flex;
-   padding: 85px 0 40px;
+   padding: 90px 0 90px;
 
    @media (max-width: $mobileSmall) {
-      min-height: 93vh;
-      padding: 75px 0 20px;
+      padding: 40px 0 40px;
    }
 
    &__wrapper {
@@ -16,10 +15,10 @@
       align-items: center;
       border-bottom: 4px solid $mainColor;
 
-      @media (max-width: 1024px) and (min-aspect-ratio: 3/2),
+   /*    @media (max-width: 1024px) and (min-aspect-ratio: 3/2),
       (max-width: 380px) {
          padding: 40px 0 50px;
-      }
+      } */
 
       @media (max-width: $tablet) {
          border-width: 3px;
@@ -160,7 +159,7 @@
       }
 
       @media (max-width: $mobileSmall) {
-         max-width: 200px;
+         max-width: 250px;
       }
    }
 

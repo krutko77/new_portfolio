@@ -1,6 +1,8 @@
 //projects
 .projects {
-   padding: 160px 0 40px;
+   background-image: url("../img/bg-90-70.jpg");
+   background-attachment: fixed;
+   padding: 90px 0 90px;
 
    @media (max-width: $tablet) {
       padding: 140px 0 40px;
@@ -92,7 +94,7 @@
    &__img-wrapper {
       overflow: hidden;
       margin-bottom: 20px;
-		aspect-ratio: 540/270;      
+      aspect-ratio: 540/270;
 
       @media (max-width: $pc) {
          margin-bottom: calc(10px + 10*((100vw - 320px) / (1260 - 320)));

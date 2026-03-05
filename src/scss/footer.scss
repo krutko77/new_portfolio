@@ -1,38 +1,38 @@
 //footer
 .footer {
 	padding: 20px 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   min-height: 90px;
-   background-color: $mainLightColor; 
-   
-   span {
-      font-weight: 500;
-   }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 70px;
+	background-color: $mainLightColor;
+
+	span {
+		font-weight: 500;
+	}
 
 	&__link {
 		text-transform: uppercase;
 		font-size: 14px;
 
-	@media (max-width: $pc) {
-		font-size: calc(12px + 2*((100vw - 320px) / (1260 - 320)));
+		@media (max-width: $pc) {
+			font-size: calc(12px + 2 * ((100vw - 320px) / (1260 - 320)));
 		}
 
 		display: inline-block;
 		transition: color 0.3s ease;
 		&::before {
-				content: '';
-				position: absolute;
-				top: 120%;
-				width: 100%;
-				height: 2px;
-				background: $accentColor;
-			}
+			content: "";
+			position: absolute;
+			top: 120%;
+			width: 100%;
+			height: 2px;
+			background: $accentColor;
+		}
 
-			@media (any-hover: hover) {
+		@media (any-hover: hover) {
 			&:hover {
-			color: $linkOtherColor;
+				color: $linkOtherColor;
 			}
 		}
 	}
@@ -44,7 +44,7 @@
 	&__content {
 		display: flex;
 		flex-direction: column;
-		align-items:center;
+		align-items: center;
 	}
 }
 
@@ -88,27 +88,28 @@
 	outline: 0;
 	border: none;
 	border-radius: 50%;
-	transition: all .3s ease;
-	animation: pulse 1.6s infinite;	
+	transition: all 0.3s ease;
+	animation: pulse 1.6s infinite;
 }
 
 @keyframes pulse {
 	0% {
-		box-shadow: 0 0 0 0 rgba(0,136,204,.85);
+		box-shadow: 0 0 0 0 rgba(0, 136, 204, 0.85);
 	}
 	70% {
-		box-shadow: 0 0 0 2em rgba(0,136,204,0);
+		box-shadow: 0 0 0 2em rgba(0, 136, 204, 0);
 	}
 	100% {
-		box-shadow: 0 0 0 0 rgba(0,136,204,0);
+		box-shadow: 0 0 0 0 rgba(0, 136, 204, 0);
 	}
 }
 
-.chatme__icon:before, .chatme__icon::after {
+.chatme__icon:before,
+.chatme__icon::after {
 	position: absolute;
 	display: block;
 	background-repeat: no-repeat;
-	transition: opacity .5s;
+	transition: opacity 0.5s;
 }
 
 .chatme__icon:before {
@@ -135,17 +136,15 @@
 }
 
 @media (any-hover: hover) {
-	.chatme__icon:active, .chatme__icon:hover {
-		background-color: #0073ad;	
+	.chatme__icon:active,
+	.chatme__icon:hover {
+		background-color: #0073ad;
 		animation: none;
 	}
 	.chatme__icon:hover::before {
 		opacity: 0;
-  }
+	}
 	.chatme__icon:hover::after {
 		opacity: 1;
-  }
+	}
 }
-	
-
-
