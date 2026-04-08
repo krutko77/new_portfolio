@@ -10,7 +10,8 @@ const builFolder = "dist";
 const rootFolder = path.basename(path.resolve());
 
 let pugPages = fs.readdirSync(srcFolder).filter(fileName => fileName.endsWith('.pug'))
-let htmlPages = [];
+let htmlPages = []
+
 
 if (!pugPages.length) {
 	htmlPages = [new FileIncludeWebpackPlugin({
@@ -27,7 +28,6 @@ if (!pugPages.length) {
 		],
 	})];
 }
-
 const paths = {
 	src: path.resolve(srcFolder),
 	build: path.resolve(builFolder)
@@ -51,21 +51,18 @@ const config = {
 		static: paths.build,
 		open: true,
 		compress: true,
-		port: 8080,
+		port: 'auto',
 		hot: true,
-		host: 'localhost', // localhost
-
-		// Розкоментувати на слабкому ПК
-		// (в режимі розробника папка результатом (dist) буде створюватися на диску)
-		/*
-		devMiddleware: {
-			writeToDisk: true,
-		},
-		*/
-
+		host: 'local-ip', // localhost
+		//В режимі розробника папка 
+		// результатом (dist) буде створюватися на диску)
+		//devMiddleware: {
+		//	writeToDisk: true,
+		//},
 		watchFiles: [
 			`${paths.src}/**/*.html`,
 			`${paths.src}/**/*.pug`,
+			`${paths.src}/**/*.json`,
 			`${paths.src}/**/*.htm`,
 			`${paths.src}/img/**/*.*`
 		],
@@ -99,12 +96,14 @@ const config = {
 								},
 							},
 						},
-					}, {
+					},
+					'postcss-loader',
+					{
 						loader: 'sass-loader',
 						options: {
 							sourceMap: true,
 						}
-					}
+					},
 				],
 			}, {
 				test: /\.pug$/,
@@ -120,6 +119,31 @@ const config = {
 						}
 					}
 				]
+			}, {
+				test: /\.(jsx)$/,
+				exclude: /node_modules/,
+				use: [
+					{
+						loader: 'string-replace-loader',
+						options: {
+							search: '@img',
+							replace: '../../img',
+							flags: 'g'
+						}
+					}, {
+						loader: "babel-loader",
+						options: {
+							presets: ["@babel/preset-react"]
+						}
+					}
+				],
+			}, {
+				test: /\.(png|jpe?g|gif|svg)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
+				],
 			}
 		],
 	},
@@ -145,7 +169,7 @@ const config = {
 					noErrorOnMissing: true
 				}
 			],
-		}),
+		})
 	],
 	resolve: {
 		alias: {
