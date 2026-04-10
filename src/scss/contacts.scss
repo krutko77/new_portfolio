@@ -1,16 +1,15 @@
 //contacts
 .contacts {
+   padding: 90px 0 90px;
 
-	padding: 90px 0 90px;
+   @media (max-width: $tablet) {
+      padding: 70px 0 70px;
+   }
 
-		@media (max-width: $tablet) {
-			padding: 140px 0 40px;
-		}
-
-		@media (max-width: $mobileSmall) {
-			padding: 100px 0 20px;
-		}
-		
+   @media (max-width: $mobileSmall) {
+      padding: 50px 0 50px;
+   }
+   
    &__wrapper {
       display: flex;
       flex-direction: column;
@@ -18,7 +17,6 @@
    }
 
    &__title {
-
       &::after {
          left: 23%;
       }
@@ -48,9 +46,7 @@
    }
 
    &__button-brief {
-
       @media (any-hover: hover) {
-
          &:hover {
             font-weight: 700;
             color: $mainButtonColor;
@@ -83,35 +79,37 @@
 }
 
 .social {
-	display: flex;
+   display: flex;
 
-	&__icon {
-		height: 48px;
-		width: 48px;
+   &__icon {
+      height: 48px;
+      width: 48px;
 
-		@media (any-hover: hover) {
-			transition: opacity 0.3s ease;
+      @media (any-hover: hover) {
+         transition: opacity 0.3s ease;
 
-			&:hover {
-				opacity: 0.7;
-			}
-		}
-	}
+         &:hover {
+            opacity: 0.7;
+         }
+      }
+   }
 
-	&__item:not(:last-child) {
-		margin-right: 35px;
-	}
+   &__item:not(:last-child) {
+      margin-right: 35px;
+   }
 }
 
 .contacts__form .form__button {
-   transition: color 0.3s ease,
+   transition:
+      color 0.3s ease,
       background-color 0.3s ease,
       border-color 0.3s ease,
       transform 0.8s ease,
       opacity 0.8s ease;
 
    @media (max-width: $tablet) {
-      transition: transform 0.8s ease,
+      transition:
+         transform 0.8s ease,
          opacity 0.8s ease;
    }
 }

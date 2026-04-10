@@ -5,11 +5,11 @@
    padding: 90px 0 90px;
 
    @media (max-width: $tablet) {
-      padding: 140px 0 40px;
+      padding: 70px 0 70px;
    }
 
    @media (max-width: $mobileSmall) {
-      padding: 100px 0 20px;
+      padding: 50px 0 50px;
    }
 
    &__wrapper {
@@ -109,7 +109,7 @@
       height: auto;
       position: relative;
       z-index: 2;
-      visibility: 0;
+      opacity: 0;
       transition: transform 0.8s ease;
    }
 
@@ -122,7 +122,7 @@
       }
 
       &._watcher-view .portfolio__img {
-         visibility: 1;
+         opacity: 1;
       }
    }
 
