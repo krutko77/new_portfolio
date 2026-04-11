@@ -1,0 +1,26 @@
+// policy
+.policy {
+   padding: 160px 0 90px;
+
+   @media (max-width: $tablet) {
+      padding: 140px 0 70px;
+   }
+
+   @media (max-width: $mobileSmall) {
+      padding: 100px 0 50px;
+   }
+
+   &__wrapper {
+      display: flex;
+      flex-direction: column;      
+   }
+
+   &__title {
+      align-self: center;
+      text-align: center;
+
+      &::after {
+         left: 24%;
+      }
+   }
+}

@@ -16,7 +16,12 @@
       @media (max-width: $tablet) {
          min-height: 60px;
          padding: 10px 15px;
-      }      
+      }
+
+      @media (max-width: $mobileSmall) {
+         min-height: 50px;
+         padding: 10px 15px;
+      }
    }
 
    .social {
@@ -45,9 +50,9 @@
       &__item:not(:last-child) {
          margin-right: 30px;
 
-			@media (max-width: $mobileSmall) {
-				margin-right: 20px;
-			}
+         @media (max-width: $mobileSmall) {
+            margin-right: 20px;
+         }
       }
    }
 
@@ -89,7 +94,7 @@
          margin-right: 30px;
 
          @media (max-width: $pc) {
-            margin-right: calc(20px + 10*((100vw - 768px) / (1260 - 768)));
+            margin-right: calc(20px + 10 * ((100vw - 768px) / (1260 - 768)));
          }
 
          @media (max-width: $tablet) {
@@ -104,7 +109,7 @@
          display: block;
 
          @media (max-width: $pc) {
-            font-size: calc(12px + 2*((100vw - 768px) / (1260 - 768)));
+            font-size: calc(12px + 2 * ((100vw - 768px) / (1260 - 768)));
          }
 
          @media (max-width: $tablet) {
@@ -114,7 +119,7 @@
 
       &__link::before,
       &__link::after {
-         content: '';
+         content: "";
          position: absolute;
          top: 23px;
          width: 0;
@@ -132,7 +137,6 @@
       }
 
       @media (any-hover: hover) {
-
          &__link:hover::before,
          &__link:hover::after {
             width: calc(50% - 3.5px);
