@@ -15,14 +15,14 @@ $mail->IsHTML(true);
 $mail->isSMTP();                                            //Send using SMTP
 $mail->Host       = 'mailbe05.hoster.by';                     //Set the SMTP server to send through
 $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-$mail->Username   = 'postmaster@webkrutko.by';                     //SMTP username
+$mail->Username   = 'sendmail@webkrutko.by';                     //SMTP username
 $mail->Password   = 'Certina#7779';                               //SMTP password
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
 $mail->Port       = 465;
 
 
 //От кого письмо
-$mail->setFrom('postmaster@webkrutko.by', 'Запрос с портфолио'); // Указать нужный E-mail
+$mail->setFrom('sendmail@webkrutko.by', 'Запрос с портфолио'); // Указать нужный E-mail
 //Кому отправить
 $mail->addAddress('webkrutko@mail.ru'); // Указать нужный E-mail
 //Тема письма
